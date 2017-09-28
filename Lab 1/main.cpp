@@ -7,25 +7,25 @@ class Shape
 {
 public:
    // pure virtual function providing interface framework.
-   virtual float getArea() = 0;
-   void setWidth(float w)
+   virtual int getArea() = 0;
+   void setWidth(int w)
    {
       width = w;
 
    }
-   void setHeight(float h)
+   void setHeight(int h)
    {
       height = h;
    }
 protected:
-   float width;
-   float height;
+   int width;
+   int height;
 };
 
 class Triangle: public Shape
 {
 public:
-   float getArea()
+   int getArea()
    {
       return (width * height)/2;
    }
@@ -44,11 +44,11 @@ public:
 
 int main(void)
 {
-    Triangle  Tri;
+   Triangle  Tri;
     Tri.setWidth(5);
-    Tri.setHeight(7);
-    // Print the area of the object.
-    cout << "Total Triangle area: " << Tri.getArea() << endl;
+   Tri.setHeight(7);
+   // Print the area of the object.
+   cout << "Total Triangle area: " << Tri.getArea() << endl;
 
-    return 0;
+   return 0;
 }
