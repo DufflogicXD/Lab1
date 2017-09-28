@@ -11,6 +11,7 @@ public:
    void setWidth(float w)
    {
       width = w;
+
    }
    void setHeight(float h)
    {
@@ -29,6 +30,17 @@ public:
       return (width * height)/2;
    }
 };
+
+class Circle: public Shape
+{
+public:
+    float getCirArea()
+    {
+        return ()
+    }
+};
+
+
 
 int main(void)
 {
